@@ -1,11 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { Container, Row, Col, Button, Modal } from "react-bootstrap";
-import Posts from "./Components/Posts";
+import Posts from "./Components/posts/Posts";
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faCamera} from "@fortawesome/free-solid-svg-icons";
+import Signup from "./Components/signup/Signup";
+import RefForm from "./refer/RefForm";
 
 function App() {
   const [value, setval] = useState("");
@@ -22,6 +24,7 @@ function App() {
         <Row id="myrow1" >
         
           <Col md={10} id="col1" className="d-flex flex-column align-items-center">
+            <input></input>
             <textarea
               value={value}
               onChange={(e) => setval(e.target.value)}
@@ -37,6 +40,10 @@ function App() {
       </Container>
 
       <Posts query={query}></Posts>
+
+      <Signup></Signup>
+
+      <RefForm></RefForm>
     </div>
   );
 }

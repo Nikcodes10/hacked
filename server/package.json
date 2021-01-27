@@ -1,0 +1,28 @@
+{
+  "name": "overflow",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.831.0",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cloudinary": "^1.23.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "firebase-admin": "^9.4.2",
+    "googleapis": "^67.0.0",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0",
+    "tesseract.js": "^2.1.4",
+    "uuid": "^8.3.2"
+  }
+}
